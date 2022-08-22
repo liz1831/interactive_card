@@ -4,9 +4,11 @@
 
 .main-container {
     width: 375px;
+    height: auto;
     margin: auto;
     position: relative;
-
+    border: 3px solid black;
+    background: variables.$White;
     &__background-section {
         background-image: url('../images/bg-main-mobile.png');
         height: 240px;
@@ -15,6 +17,7 @@
 
     &__form-section {
         padding: 90px 24px 45px;
+        background: variables.$White;
     }
 
     @media (min-width: 1200px) {
@@ -88,7 +91,7 @@
 }
 
 .form {
-    // display: none;
+    //display: none;
     &__label {
         text-transform: uppercase;
         font-size: 0.65em;
@@ -97,6 +100,9 @@
         margin-bottom: 8px;
         color: variables.$Very-dark-violet;
         font-weight: bold;
+        @media (min-width: 1200px){
+            font-size: 0.87em;
+        }
     }
 
     &__input {
@@ -143,7 +149,8 @@
 
     @media (min-width:1200px) {
         width: 386px;
-        margin-top: 160px;
+        margin-top: 32%;
+        margin-right:1.2em;
 
         &__input {
             margin-bottom: 40px;
@@ -155,16 +162,25 @@
     color: variables.$Red;
     margin: -10px 0 18px;
     font-size: 0.6em;
+    @media (min-width:1200px){
+        margin-top: -18px;
+    }
 }
 
 .form__errors-container {
     display: flex;
     gap: 5px;
+    margin: -10px 0px 5px;
+    @media (min-width:1200px){
+        gap: 1.19rem;
+        margin-top: -18px;
+    }
 }
 
 .form__errors-container div {
-    width: 100px;
-    text-align: center;
+    width: 80px;
+    text-align: left;
+    margin-top: 1px;
 }
 
 .thanks-section {
