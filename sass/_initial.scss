@@ -3,8 +3,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 body{
     font-family: variables.$font;
     font-size: 18px;
+    background:linear-gradient(variables.$White 0.5%,variables.$Linear-gradient-blue, variables.$White);    
 }
